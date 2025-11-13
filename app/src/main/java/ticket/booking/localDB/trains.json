@@ -1,0 +1,48 @@
+[
+  {
+    "trainId": "NDW1211",
+    "trainNo": "14315",
+    "source": {
+      "stationId": "S221",
+      "stationName": "Bangalore"
+    },
+    "destination": {
+      "stationId": "S512",
+      "stationName": "Delhi"
+    },
+    "journey": {
+      "Bangalore": "13:50:00",
+      "Jaipur": "17:25:00",
+      "Delhi": "21:10:00"
+    },
+    "seats": [
+      [false, false, false, false, false, false],
+      [false, false, false, false, false, false],
+      [false, false, false, false, false, false],
+      [false, false, false, false, false, false]
+    ]
+  },
+  {
+    "trainId": "NDW1412",
+    "trainNo": "14320",
+    "source": {
+      "stationId": "S115",
+      "stationName": "Mumbai"
+    },
+    "destination": {
+      "stationId": "S221",
+      "stationName": "Bangalore"
+    },
+    "journey": {
+      "Mumbai": "06:30:00",
+      "Pune": "09:00:00",
+      "Bangalore": "14:45:00"
+    },
+    "seats": [
+      [false, false, false, false, false, false],
+      [false, false, false, false, false, false],
+      [false, false, false, false, false, false],
+      [false, false, false, false, false, false]
+    ]
+  }
+]

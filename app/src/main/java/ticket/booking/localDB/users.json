@@ -1,0 +1,48 @@
+[
+  {
+    "userId": "abc12",
+    "userName": "Lovepreet Singh",
+    "userEmail": "mj@gmail.com",
+    "userPassword": "12345",
+    "ticketsBooked": [
+      {
+        "ticketId": "your_ticket_id",
+        "userId": "abcdefgh",
+        "source": {
+          "stationId": "S221",
+          "stationName": "Bangalore"
+        },
+        "destination": {
+          "stationId": "S512",
+          "stationName": "Delhi"
+        },
+        "dateOfTravel": "2025-11-08T18:30:00",
+        "train": {
+          "trainId": "NDW1211",
+          "trainNo": "14315",
+          "seats": [
+            [false, false, false, false, false, false],
+            [false, false, false, false, false, false],
+            [false, false, false, false, false, false],
+            [false, false, false, false, false, false]
+          ],
+          "journey": [
+                {
+                    "station": { "stationId": "S221", "stationName": "Bangalore" },
+                    "time": "13:50:00"
+                },
+                {
+                    "station": { "stationId": "S312", "stationName": "Jaipur" },
+                    "time": "17:25:00"
+                },
+                {
+                    "station": { "stationId": "S512", "stationName": "Delhi" },
+                    "time": "21:10:00"
+                }
+           ]
+
+        }
+      }
+    ]
+  }
+]
