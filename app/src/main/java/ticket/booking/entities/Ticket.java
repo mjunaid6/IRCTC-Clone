@@ -2,7 +2,6 @@ package ticket.booking.entities;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 public class Ticket {
     private String ticketId;
@@ -32,4 +31,12 @@ public class Ticket {
     public Train getTrain() { return this.train; }
 
     public Duration getDuration() { return Duration.between(startTime, endTime); }
+
+	public void printTicket() {
+		System.out.println("Ticket Id : " + ticketId);
+		System.out.println("This ticket is booked for : " + userId);
+		System.out.println("for the train number : " + train.getTrainNo());
+		System.out.println("from  " + source.getStationName() + " to " + destination.getStationName());
+        System.out.println("Duration : " + startTime + " to " + endTime);
+	}
 }

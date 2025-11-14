@@ -22,7 +22,11 @@ public class User {
 
     public String getUserName() { return this.userName; }
     public String getUserEmail() { return this.userEmail; }
+
+    public String getPassword() { return this.userPassword; }
     public List<Ticket> getBookedTickets() { return this.ticketsBooked; }
+
+    public void setBookings(List<Ticket> bookings) { this.ticketsBooked = bookings; }
 
     public void addTicket(Ticket t) { ticketsBooked.add(t); }
 }
