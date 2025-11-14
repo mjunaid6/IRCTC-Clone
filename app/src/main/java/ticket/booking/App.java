@@ -3,12 +3,77 @@
  */
 package ticket.booking;
 
+import java.io.IOException;
+import java.util.Scanner;
+
+import ticket.booking.controllers.StationController;
+import ticket.booking.controllers.TrainController;
+import ticket.booking.controllers.UserController;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    public static void main(String[] args) throws IOException {
+        System.out.println("Ticket booking System is Running...");
+
+        Scanner sc = new Scanner(System.in);
+        UserController userController = new UserController(sc);
+        TrainController trainController = new TrainController(sc);
+        StationController stationController = new StationController(sc);
+
+        while (true) {
+            System.out.println("\n===== Ticket Booking System =====");
+            System.out.println("1. Login");
+            System.out.println("2. Signup");
+            System.out.println("3. Fetch Bookings");
+            System.out.println("4. Book Ticket");
+            System.out.println("5. Cancel Booking");
+            System.out.println("6. Add Train");
+            System.out.println("7. Add Station");
+            System.out.println("8. Exit");
+
+            System.out.print("Enter your choice: ");
+            int choice = Integer.parseInt(sc.nextLine());
+
+            switch (choice) {
+
+                case 1:
+                    userController.login();
+                    break;
+
+                case 2:
+                    userController.signup();
+                    break;
+
+                case 3:
+                    userController.fetchBooking();
+                    break;
+
+                case 4:
+                    userController.bookTicket();
+                    break;
+
+                case 5:
+                    userController.cancelBooking();
+                    break;
+
+                case 6:
+                    trainController.addTrain();
+                    break;
+
+                case 7:
+                    stationController.addStation();
+                    break;
+
+                case 8:
+                    System.out.println("Exiting system... Goodbye!");
+                    return;
+
+                default:
+                    System.out.println("Invalid choice. Try again!");
+            }
+        }
     }
 }
