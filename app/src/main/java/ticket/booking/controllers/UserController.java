@@ -1,8 +1,8 @@
 package ticket.booking.controllers;
 
+import java.util.Scanner;
 import java.io.IOException;
 import java.time.LocalDate;
-import java.util.Scanner;
 
 import ticket.booking.entities.Train;
 import ticket.booking.services.TrainService;

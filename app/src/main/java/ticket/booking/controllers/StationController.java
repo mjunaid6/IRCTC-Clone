@@ -1,7 +1,7 @@
 package ticket.booking.controllers;
 
-import java.io.IOException;
 import java.util.Scanner;
+import java.io.IOException;
 
 import ticket.booking.services.StationService;
 
