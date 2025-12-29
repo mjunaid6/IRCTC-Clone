@@ -27,7 +27,7 @@ This project is a pure **Java Backend Application** designed to simulate the ser
 * <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java"> (JDK 11+)
 
 **Build & Management:**
-* <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" alt="Gradle"> (or Maven)
+* <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white" alt="Maven">
 
 **Data Persistence:**
 * In-memory Collections (HashMaps/Lists) or integration with **JDBC** for SQL-based storage.
